@@ -166,7 +166,6 @@ public float getDepth(float x, float y, Vector3[] vertex ) {
 
     float z = -(n.x * x + n.y * y + d) / n.z;    
     return z;
-    return 0.0;
 }
 
 float[] barycentric(Vector3 P, Vector4[] verts) {
@@ -209,9 +208,6 @@ float[] barycentric(Vector3 P, Vector4[] verts) {
     w /= sum;
 
     float[] result = {u, v, w};
-    return result;
-    float[] result={0.0, 0.0, 0.0};
-
     return result;
 }
 
